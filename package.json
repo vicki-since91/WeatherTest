@@ -1,0 +1,26 @@
+{
+  "name": "weathertest",
+  "version": "1.0.0",
+  "description": "test suite using cypress for testing weather report UI",
+  "main": "cypress_runner.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "keywords": [
+    "weather",
+    "UI",
+    "test",
+    "suite"
+  ],
+  "author": "Vigneshwar",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^7.3.0",
+    "ls": "^0.2.1",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0",
+    "rimraf": "^3.0.2",
+    "yargs": "^17.0.1"
+  }
+}
