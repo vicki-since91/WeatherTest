@@ -20,7 +20,8 @@ NOTE: Default will be chrome even if no arguments are passed
 To run both API and UI test cases in firefox
 ### `node cypress_runner -b firefox`
 
-### `npm run test`
+
 To open the cypress window and executing / running tests individually
+### `npm run test`
 
 ###########################################################################################################################################################################
