@@ -1,5 +1,5 @@
 {
-    "validationCity": ["Bengaluru", "Chennai"],
+    "validationCity": ["Chennai", "Bengaluru"],
     "pinCities": ["Pune", "Ahmedabad", "Allahabad"],
     "unpinCities": ["Madurai", "Jaipur", "Indore"],
     "city": ["Bengaluru", "Madurai", "Chennai"],
@@ -17,6 +17,6 @@
             "name": "Air Force hospital"
         }
     ],
-    "allowedTempVariation": 8,
+    "allowedTempVariation": 10,
     "allowedWindVariation": 3
 }
