@@ -1,0 +1,17 @@
+{
+    "baseUrl": "https://social.ndtv.com/static/Weather/report/",
+    "env": {
+        "apiUrl": "https://api.openweathermap.org/data/2.5/weather",
+        "appId": "7fe67bf08c80ded756e598d6f8fedaea"
+    },
+    "reporter": "mochawesome",
+    "reporterOptions":
+    {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+    },
+    "screenshotsFolder": "cypress/report/mochawesome-report/assets"
+}

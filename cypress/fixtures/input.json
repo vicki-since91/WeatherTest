@@ -1,0 +1,22 @@
+{
+    "validationCity": ["Bengaluru", "Chennai"],
+    "pinCities": ["Pune", "Ahmedabad", "Allahabad"],
+    "unpinCities": ["Madurai", "Jaipur", "Indore"],
+    "city": ["Bengaluru", "Madurai", "Chennai"],
+    "zipcode": [
+        { 
+            "zip": "560063",
+            "name": "A F Station Yelahanka"
+        },
+        { 
+            "zip": "560038",
+            "name": "Indiranagar (Bangalore)"
+        },
+        { 
+            "zip": "560007",
+            "name": "Air Force hospital"
+        }
+    ],
+    "allowedTempVariation": 8,
+    "allowedWindVariation": 3
+}

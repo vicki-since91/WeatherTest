@@ -1,3 +1,11 @@
 # Dependency directories
 node_modules/
 package-lock.json
+
+# Screenshots and Videos
+cypress/videos/*
+cypress/report/*
+
+#ignoring json files
+cypress/fixtures/*.json
+!input.json
