@@ -23,6 +23,7 @@ const argv = yargs.options({
 
 const reportDir = cypressConfig.reporterOptions.reportDir
 const reportFiles = `${reportDir}/*.json`
+const reportHtml = `${reportDir}/*.html` 
 // list all of existing report files
 ls(reportFiles, { recurse: true }, file => console.log(`removing ${file.full}`))
 
@@ -35,6 +36,14 @@ rm(reportFiles, (error) => {
     console.log('Removing all existing report files successfully!')
 })
 
+rm(reportHtml, (error) => {
+    if (error) {
+        console.error(`Error while removing existing report files: ${error}`)
+        process.exit(1)
+    }
+    console.log('Removing all html report files successfully!')
+})
+
 cypress.run({
     browser: argv.browser,
     spec: argv.spec
@@ -42,9 +51,10 @@ cypress.run({
     merge({
         files: ["cypress/report/mochawesome-report/*.json"],
     }).then((report) => {
-        marge.create(report, {reportDir})
-        console.log('Test Exited Successfully')
-        process.exit(0)
+        marge.create(report, {reportDir}).then(() => {
+            console.log('Test Exited Successfully')
+            process.exit(0)
+        })
     })
 }).catch((error) => {
     console.error('errors: ', error)
